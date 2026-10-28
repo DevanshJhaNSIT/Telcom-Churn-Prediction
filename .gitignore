@@ -1,0 +1,21 @@
+# Environments
+.venv/
+venv/
+env/
+
+# Data (download from Kaggle — see README)
+data/raw/*.csv
+data/processed/
+
+# Trained models
+models/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

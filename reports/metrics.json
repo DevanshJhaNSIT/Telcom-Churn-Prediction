@@ -1,0 +1,132 @@
+{
+  "cv_comparison": [
+    {
+      "model": "LogisticRegression",
+      "cv_roc_auc_mean": 0.848,
+      "cv_roc_auc_std": 0.0115,
+      "tuned_cv_roc_auc": 0.8481
+    },
+    {
+      "model": "GradientBoosting",
+      "cv_roc_auc_mean": 0.8467,
+      "cv_roc_auc_std": 0.0114,
+      "tuned_cv_roc_auc": 0.85
+    },
+    {
+      "model": "RandomForest",
+      "cv_roc_auc_mean": 0.8249,
+      "cv_roc_auc_std": 0.0115,
+      "tuned_cv_roc_auc": 0.8475
+    }
+  ],
+  "best_model": "GradientBoosting",
+  "best_params": {
+    "model__learning_rate": 0.05,
+    "model__max_depth": 2,
+    "model__n_estimators": 200
+  },
+  "best_cv_roc_auc": 0.85,
+  "threshold_costs_train_oof": [
+    {
+      "threshold": 0.1,
+      "cost": 2533
+    },
+    {
+      "threshold": 0.15,
+      "cost": 2402
+    },
+    {
+      "threshold": 0.2,
+      "cost": 2409
+    },
+    {
+      "threshold": 0.25,
+      "cost": 2529
+    },
+    {
+      "threshold": 0.3,
+      "cost": 2689
+    },
+    {
+      "threshold": 0.35,
+      "cost": 2909
+    },
+    {
+      "threshold": 0.4,
+      "cost": 3240
+    },
+    {
+      "threshold": 0.45,
+      "cost": 3563
+    },
+    {
+      "threshold": 0.5,
+      "cost": 3968
+    },
+    {
+      "threshold": 0.55,
+      "cost": 4508
+    },
+    {
+      "threshold": 0.6,
+      "cost": 4950
+    },
+    {
+      "threshold": 0.65,
+      "cost": 5408
+    },
+    {
+      "threshold": 0.7,
+      "cost": 5830
+    }
+  ],
+  "test_roc_auc": 0.8460926399545325,
+  "default_0.50": {
+    "threshold": 0.5,
+    "churn_precision": 0.6690391459074733,
+    "churn_recall": 0.5026737967914439,
+    "churn_f1": 0.5740458015267176,
+    "accuracy": 0.8019872249822569,
+    "business_cost": 1023,
+    "confusion_matrix": [
+      [
+        942,
+        93
+      ],
+      [
+        186,
+        188
+      ]
+    ]
+  },
+  "tuned": {
+    "threshold": 0.15,
+    "churn_precision": 0.4444444444444444,
+    "churn_recall": 0.8877005347593583,
+    "churn_f1": 0.592328278322926,
+    "accuracy": 0.6756564939673527,
+    "business_cost": 625,
+    "confusion_matrix": [
+      [
+        620,
+        415
+      ],
+      [
+        42,
+        332
+      ]
+    ]
+  },
+  "top_drivers_mean_abs_shap": {
+    "Contract": 0.5883,
+    "tenure": 0.4562,
+    "InternetService": 0.2648,
+    "OnlineSecurity": 0.2048,
+    "TechSupport": 0.19,
+    "PaymentMethod": 0.1662,
+    "MonthlyCharges": 0.1573,
+    "PaperlessBilling": 0.1243,
+    "MultipleLines": 0.1072,
+    "OnlineBackup": 0.0841
+  }
+}
